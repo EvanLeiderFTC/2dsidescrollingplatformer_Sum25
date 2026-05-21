@@ -25,7 +25,7 @@ show_debug_message(string(move_x));
 /// @DnDAction : YoYo Games.Collisions.If_Object_At
 /// @DnDVersion : 1.1
 /// @DnDHash : 0AC5309F
-/// @DnDComment : if we are on the Ground
+/// @DnDComment : if we collide with death zone
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y" "2"
 /// @DnDArgument : "y_relative" "1"
@@ -94,4 +94,4 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDArgument : "maxxmove" "walk_speed"
 /// @DnDArgument : "maxymove" "jump_speed"
 /// @DnDArgument : "object" "collision_tilemap"
-move_and_collide(move_x, move_y, collision_tilemap,4,0,0,walk_speed,jump_speed);
+move_and_collide(move_x, move_y, [collision_tilemap],4,0,0,walk_speed,jump_speed);
